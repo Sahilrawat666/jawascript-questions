@@ -589,9 +589,9 @@
 
 //..............................................
 // 5. Date Functions
-let today = new Date();
+// let today = new Date();
 
-console.log(today); // e.g., Sat Sep 20 2025 18:30:00 GMT+0530
+// console.log(today); // e.g., Sat Sep 20 2025 18:30:00 GMT+0530
 // console.log(today.getFullYear()); // 2025
 // console.log(today.getMonth()); // 8  (September, months 0–11)
 // console.log(today.getDate()); // 20
@@ -599,3 +599,24 @@ console.log(today); // e.g., Sat Sep 20 2025 18:30:00 GMT+0530
 // console.log(today.getHours()); // 18
 // console.log(today.getMinutes()); // 30
 // console.log(today.getDate().getMonth().getFullYear()); // 30
+
+//..................................................................
+// console.log(a);
+
+// var a = "sahil";
+// // console.log(a);
+//..........................................................................
+//closure--------
+// closure = they provide ability to access outer function variable.
+// function outer() {
+//   let a = 5;
+//   function inner() {
+//     console.log(a);
+//   }
+//   inner();
+// }
+// outer();
+//................................................................................
+
+// console.log(Math.floor(Math.random() * 7));
+//.......................................................

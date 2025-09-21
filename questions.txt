@@ -1,0 +1,8 @@
+jawascript..........................................
+1.  hoisting
+2.  syncronus,asyncronus js 
+3. conditionls
+4. callback
+5. callback hell
+6. async await
+7.
