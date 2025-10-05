@@ -154,6 +154,7 @@
 // let arr = [1, 9, 2, 3, 4, 5, 3, 2, 1, 3, 4, 5, 5, 7, 8, 9];
 
 // let set = new Set(arr);
+// console.log(set);
 // let setArr = [...set];
 // console.log(setArr);
 
@@ -396,7 +397,7 @@
 
 // 4. DOM Manipulation.........................................................
 
-// 📌 Example:
+//  Example:
 
 // document.querySelector("button").addEventListener("click", () => {
 //   document.querySelector("h1").innerText = "Clicked!";
@@ -484,7 +485,8 @@
 // let doubled = numbers.map((num) => num * 2);
 
 // console.log(doubled); // [2, 4, 6, 8]
-////////////////////////////////////
+
+///////////////////////////////////////////
 // 2. filter()
 // let numbers = [1, 2, 3, 4, 5, 6];
 
@@ -492,7 +494,7 @@
 // let evens = numbers.filter((num) => num % 2 === 0);
 
 // console.log(evens); // [2, 4, 6]
-//////////////////////////////////
+//////////////////////////////////////////
 
 // 3. reduce()
 // let numbers = [1, 2, 3, 4];
@@ -504,7 +506,7 @@
 
 /////////////////////
 
-// 🔑 Differences in One Line:
+//  Differences in One Line:
 
 // map() → transforms every element.
 
@@ -513,7 +515,7 @@
 // reduce() → reduces the array to a single value.
 
 ////////////////////////
-// ⚡ Example using all three together:
+//  Example using all three together:
 // let numbers = [1, 2, 3, 4, 5, 6];
 
 // // Double even numbers and sum them
@@ -620,3 +622,76 @@
 
 // console.log(Math.floor(Math.random() * 7));
 //.......................................................
+
+// let arr = [2, 3, 4, 3, 3, 2, 5, 7, 8, 9];
+// let arr2 = Set(arr);
+// console.log([...arr2]);
+
+// let set = new Set(arr);
+// console.log(set);
+// let setArr = [...set];
+// console.log(setArr);
+
+// let duplicates = arr.filter((item, index) => arr.indexOf(item) !== index);
+// let dups = arr.filter((n, i) => arr.indexOf(n) !== i);
+
+// console.log([...new Set(dups)]);
+// console.log([...new Set(dups)]);
+// Output: [1, 2, 3, 4, 5, 9]
+
+// js advance topice.......................................................................................................................
+
+// const users = [
+//   { id: 1, name: "sahil", age: "22" },
+//   { id: 2, name: "aman", age: "23" },
+//   { id: 3, name: "ayush", age: "24" },
+//   { id: 4, name: "ankush", age: "25" },
+//   { id: 5, name: "sameer", age: "21" },
+// ];
+
+// // Filter users whose age is greater than 23
+// const newusers = users.filter((user) => Number(user.age) > 23);
+
+// console.log(newusers);
+//...........................................................................
+// find and findlast method ...........................
+// const users = [
+//   { id: 3, name: "ayush", age: "24" },
+//   { id: 1, name: "sahil", age: "22" },
+//   { id: 2, name: "aman", age: "23" },
+//   { id: 4, name: "ankush", age: "25" },
+//   { id: 5, name: "sameer", age: "21" },
+// ];
+
+// const firstUser = users.find((user) => Number(user.age) > 23);
+// const lastUser = users.findLast((user) => Number(user.age) > 23);
+
+// console.log("first user is: ", firstUser); // First match
+// console.log("first user is: ", lastUser); // Last match
+
+// optional chaining ........................................
+// const sahil = {
+//   data: {
+//     age: 12,
+//     add: "uttarakhand",
+//   },
+// };
+// console.log(sahil?.meta?.name);
+
+// Destructuring in JavaScript....................................................
+// Destructuring in JavaScript is a feature that allows you to extract
+// values from arrays or properties from objects and assign them to
+// individual variables in a clean, concise, and readable way.
+// Array destructuring
+// const colors = ["red", "green", "blue"]; //indexing based
+// const [first, second] = colors;
+
+// console.log(first); // red
+// console.log(second); // green
+
+// // Object destructuring
+// const user = { name: "Sahil", age: 22 }; // names (keys) based
+// const { name, age } = user;
+
+// console.log(name); // Sahil
+// console.log(age); // 22
