@@ -78,3 +78,125 @@
 //   console.log(i);
 //   i++;
 // } while (i <= 10);
+
+//..............................template literals
+// A modern way to create strings in JavaScript using backticks ` that allows
+//  inserting variables and expressions directly with ${} and
+//  supports multi-line strings.
+// const str = {
+//   name: "sahil",
+//   age: "20",
+// };
+// console.log(`my name is ${str.name} and i am ${str.age} years old.`);
+
+//................................................................./
+// // explain
+// // 🔹 Breaking your example
+// // arr = ["A", "B", "C", "D", "A", "A"]
+// // searchElement = "A"
+
+// const arr = ["A", "B", "C", "D", "A", "A"];
+// console.log(arr.indexOf("A", 1)); // 4
+//......................................................./
+// sort in assendind order
+// const arrr = [1, 2, 3, 4, 3, 7, 89, 789];
+
+// // Sort in ascending order
+// const arr = [2, 3, 4, 5, 9, 8, 7];
+// console.log(arr.sort((a, b) => a - b));
+// const letters = ["D", "A", "C", "B"];
+
+//........../
+
+// // letters.sort(); // Sort in ascending (alphabetical) order
+
+// console.log(letters.sort());
+
+// const arr2 = [2, 3, 4, 5, 9, 8, 7, 20, 30, 21];
+// console.log(arr2.sort((a, b) => a - b));
+//......................// // Sort in descending order
+
+// const arr2 = [2, 3, 4, 5, 9, 8, 7, 20, 30, 21];
+// console.log(arr2.sort((a, b) => b - a));
+
+//.....................Logical AND (&&)....................................
+// Syntax: condition1 && condition2;
+//
+// console.log(true && true); // true   both true
+// console.log(false && false); // false  both false
+// console.log(true && false); // false  if one false
+//////
+// Practical example:
+
+// let name = "sahil",
+//   age = 20;
+// if (age >= 18 && name == "sahil") {
+//   console.log("Eligible"); //  both conditions true
+// } else {
+//   console.log("not eligible");
+// }
+//.....................Logical OR (||).............................
+// Syntax: condition1 || condition2;   // only one condition should be true
+// console.log(false || true);  // true  one true
+// console.log(false || false); // false both false
+
+//......................Logical NOT (!)..............................
+// Syntax: !condition;
+
+// More examples:
+// console.log(!false); // true
+// console.log(!true); // false
+// console.log(!0); // true  (because 0 is falsy)
+// console.log(!""); // true  (empty string is falsy)
+// console.log(!"JS"); // false (non-empty string is truthy)
+
+//......................truthy and falsy(VVI)............................
+// ❌ Falsy Values (Only 8 of them)
+
+// These always evaluate to false:
+
+// Falsy Value	Description
+// false	Boolean false
+// 0	Number zero
+// -0	Negative zero
+// "" or '' or ````	Empty string
+// null	Nothing
+// undefined	Not defined
+// NaN	Not a Number
+// 0n	BigInt zero
+
+// console.log(!NaN);
+
+// if ("" == false) {
+//   console.log("sahil");
+// } else {
+//   console.log("ayush");
+// }
+
+//..............................................
+// const arr = [, , ,];
+// console.log(1 == true);
+
+// console.log(![]);
+///.............................. Comma Operator......................
+// 🔹 Comma Operator ( , ) in JavaScript
+// Definition:
+
+// The comma operator allows you to evaluate multiple expressions from left to right,
+//  but only the last expression’s value is returned.
+// function sum() {
+//   console.log("sahil");
+//   return 2 + 2;
+// }
+// function square() {
+//   console.log("ayush");
+
+//     // return 4 * 4;
+// }
+// let result = (sum(), square());
+// console.log(result);
+
+//..................................................../
+// const str1 = "sahil";
+// const str2 = "rawat";
+// console.log([...str1, ...str2]);
