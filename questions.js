@@ -682,16 +682,35 @@
 // Destructuring in JavaScript is a feature that allows you to extract
 // values from arrays or properties from objects and assign them to
 // individual variables in a clean, concise, and readable way.
-// Array destructuring
+//
+// // Array destructuring
 // const colors = ["red", "green", "blue"]; //indexing based
 // const [first, second] = colors;
 
-// console.log(first); // red
-// console.log(second); // green
+// // console.log(first); // red
+// // console.log(second); // green
 
-// // Object destructuring
+// // Object destructuringg
 // const user = { name: "Sahil", age: 22 }; // names (keys) based
 // const { name, age } = user;
 
 // console.log(name); // Sahil
 // console.log(age); // 22
+
+// const user = [
+//   { name: "sahil ", age: "23", address: "ranakot", pin: 123,[{name:"neha"}]},
+//   { name: "ayush" },
+// ];
+// console.log(user[1].name);
+//.....................................................................
+
+// const colors = ["red", "green", "blue"]; //indexing based
+// const [first, second] = colors;
+
+// console.log([...first, ...second]);
+// console.log([...colors[0]]);j
+
+// const number = ["sahil"];
+// const number2 = [7, 8, 9];
+// console.log([...number, ...number2]);
+//..............................................................

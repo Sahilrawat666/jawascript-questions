@@ -1,8 +1,311 @@
 jawascript..........................................
-1.  hoisting
-2.  syncronus,asyncronus js 
+ .Destructuring in array and object
+1. hoisting
+2. syncronus,asyncronus js 
 3. conditionls
 4. callback
 5. callback hell
 6. async await
-7.
+7. 
+
+🌟 JavaScript Learning Roadmap
+Phase 1: Core JavaScript Fundamentals
+1. Basic Syntax & Structure
+
+Comments
+
+Variables (var, let, const)
+
+Data Types (String, Number, Boolean, Undefined, Null, Symbol, BigInt)
+
+2. Operators
+
+Arithmetic Operators
+
+Comparison Operators
+
+Logical Operators
+
+Assignment Operators
+
+Ternary Operator
+
+3. Control Structures
+
+if, else if, else
+
+switch statement
+
+4. Loops
+
+for
+
+while
+
+do-while
+
+for-in
+
+for-of
+
+5. Functions
+
+Function Declaration
+
+Function Expression
+
+Arrow Function (=>)
+
+Anonymous Function
+
+IIFE (Immediately Invoked Function Expression)
+
+Default Parameters
+
+Return Statement
+
+Parameters & Arguments
+
+4 Ways to write functions
+
+6. Arrays
+
+Creating & Accessing Arrays
+
+Utility Methods:
+
+Array.isArray()
+
+Array.from()
+
+Array.of()
+
+Array Methods:
+
+push(), pop()
+
+shift(), unshift()
+
+slice(), splice()
+
+join()
+
+forEach()
+
+map()
+
+filter()
+
+reduce()
+
+7. Objects
+
+Creating Objects
+
+Accessing Properties & Methods
+
+Nested Objects
+
+Utility Methods:
+
+Object.keys()
+
+Object.values()
+
+Object.entries()
+
+Object.assign()
+
+Object.freeze()
+
+Object.seal()
+
+8. Basic Error Handling
+
+try, catch, finally
+
+Throwing custom errors
+
+9. Basic DOM Manipulation
+
+Selecting elements (getElementById, querySelector, etc.)
+
+Modifying content, style, and attributes
+
+Phase 2: Built-in Objects & Global Functions
+1. Math Object
+
+Math.round()
+
+Math.floor()
+
+Math.ceil()
+
+Math.random()
+
+Math.max() / Math.min()
+
+Math.pow() / Math.sqrt()
+
+Math.abs()
+
+2. Date Object
+
+new Date()
+
+Date.now()
+
+getFullYear(), getMonth(), getDate(), getDay()
+
+setFullYear(), setHours()
+
+Date formatting & time difference
+
+3. JSON
+
+JSON.stringify() (Object → JSON)
+
+JSON.parse() (JSON → Object)
+
+4. Global Functions
+
+parseInt()
+
+parseFloat()
+
+isNaN()
+
+isFinite()
+
+encodeURIComponent()
+
+decodeURIComponent()
+
+Phase 3: Modern JavaScript (ES6+ Concepts)
+1. Core Concepts
+
+let vs const vs var
+
+Pass by Value vs Pass by Reference
+
+Truthy vs Falsy values
+
+2. ES6+ Features
+
+Spread Operator (...)
+
+Rest Operator (...)
+
+Destructuring (Array & Object)
+
+Nullish Coalescing (??)
+
+Optional Chaining (?.)
+
+Modules (import/export)
+
+Dynamic Imports
+
+Top-level await
+
+3. Data Structures
+
+Set & WeakSet
+
+Map & WeakMap
+
+Symbols
+
+BigInt
+
+4. Advanced ES Concepts
+
+Iterators & Generators
+
+Proxy & Reflect (for meta-programming)
+
+Memory Management basics
+
+Phase 4: Advanced JavaScript & Core Mechanics
+1. Function Behavior
+
+Function Hoisting
+
+Closures
+
+Callback Functions
+
+Callback Hell
+
+Async/Await
+
+Promises
+
+2. JavaScript Execution & Behavior
+
+Type Equality & Coercion
+
+Short-Circuit Evaluation (&&, ||)
+
+Hoisting (variables & functions)
+
+3. Object-Oriented & Functional Programming
+
+Constructor Functions
+
+Objects & Prototypes
+
+Classes & Inheritance
+
+Functional Programming Concepts
+
+Object-Oriented Programming
+
+4. Other Core Topics
+
+Autoboxing & Primitive Wrappers
+
+Scope & Lexical Scope
+
+Web Scoping
+
+Phase 5: JavaScript in the Browser
+1. DOM Manipulation (Advanced)
+
+Creating, updating, removing elements
+
+Event handling (addEventListener)
+
+Event propagation (capturing, bubbling)
+
+2. Form Handling
+
+Input validation
+
+Prevent default behavior
+
+Submitting forms with JavaScript
+
+3. Async Browser Operations
+
+fetch() API
+
+XMLHttpRequest (older way)
+
+Working with APIs
+
+4. Node.js Basics
+
+Global Object
+
+Modules
+
+Event-driven architecture
+
+✅ Bonus Practice Topics
+
+Debugging in Console
+
+Writing clean, modular code
+
+Practice Projects (Todo App, Calculator, API Fetcher, etc.)
