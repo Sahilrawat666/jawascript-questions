@@ -714,3 +714,355 @@
 // const number2 = [7, 8, 9];
 // console.log([...number, ...number2]);
 //..............................................................
+
+//..................Asynchronous jawascript.........................
+
+// .....................callback functions.............................
+// console.log("1");
+
+// async function myFunction() {
+//   await setTimeout(() => {
+//     console.log("2");
+//   }, 2000);
+// }
+
+// console.log("3");
+/////////////////////////
+// console.log("1");
+
+// async function myFunction() {
+//   await new Promise((resolve) => {
+//     setTimeout(() => {
+//       console.log("2");
+//       resolve();
+//     }, 2000);
+//   });
+// }
+
+// myFunction();
+// console.log("3");
+///////////////////////////////////
+
+// console.log("1");
+
+// async function myFunction() {
+//   await new Promise((resolve) => {
+//     setTimeout(() => {
+//       console.log("2");
+//       resolve();
+//     }, 2000);
+//   });
+// }
+
+// await myFunction(); // wait for it to finish
+// console.log("3");
+
+// function sahil(name, CBfunction) {
+//   CBfunction(name);
+// }
+// function printname(name) {
+//   console.log("hello", name);
+// }
+// sahil("sahil rawat", printname);
+///////////////////////////////
+// function a(nameFunc, ageFunc, noFunc) {
+//   // calling all the passed functions
+//   nameFunc();
+//   ageFunc();
+//   noFunc();
+// }
+
+// function namefunction() {
+//   const name = "Sahil";
+//   console.log("Name:", name);
+// }
+
+// function agefunction() {
+//   const age = 22;
+//   console.log("Age:", age);
+// }
+
+// function nofunction() {
+//   const no = 7819099116;
+//   console.log("Phone No:", no);
+// }
+
+// // passing functions as arguments (callbacks)
+// a(namefunction, agefunction, nofunction);
+
+// function a(callback) {
+//   console.log("fetching data....");
+//   setTimeout(() => {
+//     const str = { name: "sahil", age: 20 };
+//     console.log(str);
+//     callback();
+//   }, 3000);
+// }
+// a(() => {
+//   console.log("processing data....");
+// });
+////////////////////////////////
+
+// function a(callback) {
+//   callback();
+// }
+// function b() {
+//   console.log("sahil");
+// }
+// a(b);
+
+/////////////////////////Asynchronous Callback.......................
+
+/* function fetchData(callback) {
+  console.log("Fetching data...");
+
+  // Simulating an asynchronous task (like API call)
+  setTimeout(() => {
+    const data = { name: "Sahil", age: 20 };
+    console.log("Data fetched:", data);
+
+    // calling the callback AFTER async task completes
+    callback();
+  }, 2000);
+}
+
+// calling fetchData and passing a callback
+fetchData(() => {
+  console.log("Now processing data...");
+}); */
+// .................................................
+
+/* function a(callback) {
+  console.log("fetchinig data...");
+  setTimeout(() => {
+    const data = { name: "sahil", age: 20 };
+    console.log("data received ", data);
+    callback();
+  }, 3000);
+}
+
+a(() => {
+  console.log("task completed");
+}); */
+/* 
+function getUser(callback) {   //hier order function
+  console.log("Fetching user...");
+  setTimeout(() => {
+    const user = { id: 1, name: "Sahil" };
+    console.log("User fetched:", user);
+    callback(user);
+  }, 1000);
+}
+getUser((user) => {   //callback function
+  console.log("user name is ", user.name);
+}); */
+/////////////////////callback hell....................................
+/* function task1(callback) {
+  console.log("task started");
+  setTimeout(() => {
+    console.log("task 1 completed");
+  }, 1000);
+}
+
+function task2(callback) {
+  setTimeout(() => {
+    const error = true;
+    if (error) {
+      console.log("error in task 1");
+    } else {
+      callback();
+    }
+    console.log("task 2 completed");
+    callback();
+  }, 1000);
+}
+
+function task3(callback) {
+  setTimeout(() => {
+    console.log("task 3 completed");
+    callback();
+  }, 1000);
+}
+task1(() => {
+  task2(() => {
+    task3(() => {
+      console.log("all task completed....");
+    });
+  });
+});
+ */
+///////////
+/* function task1(callback) {
+  console.log("Task 1 started");
+  setTimeout(() => {
+    const error = false; // change to true to test error
+    if (error) {
+      callback("Error in Task 1"); // stop the chain
+    } else {
+      console.log("Task 1 completed");
+      callback(null); // null = no error
+    }
+  }, 1000);
+}
+
+function task2(callback) {
+  console.log("Task 2 started");
+  setTimeout(() => {
+    const error = false; // change to true to test error
+    if (error) {
+      callback("Error in Task 2");
+    } else {
+      console.log("Task 2 completed");
+      callback();
+    }
+  }, 1000);
+}
+
+function task3(callback) {
+  console.log("Task 3 started");
+  setTimeout(() => {
+    const error = false; // change to true to test error
+    if (error) {
+      callback("Error in Task 3");
+    } else {
+      console.log("Task 3 completed");
+      callback(null);
+    }
+  }, 1000);
+}
+
+// Nested callbacks with error handling
+task1((err) => {
+  if (err) return console.log(err);
+
+  task2((err) => {
+    if (err) return console.log(err);
+
+    task3((err) => {
+      if (err) return console.log(err);
+
+      console.log("All tasks completed successfully!");
+    });
+  });
+});
+ */
+// function task1(callback) {
+//   console.log("Task 1 started...");
+//   setTimeout(() => {
+//     console.log("Task 1 completed...");
+//     callback();
+//   }, 1000);
+// }
+
+// function task2(callback) {
+//   console.log("Task 2 started...");
+//   setTimeout(() => {
+//     console.log("Task 2 completed...");
+//     callback();
+//   }, 1000);
+// }
+
+// function task3(callback) {
+//   console.log("Task 3 started...");
+//   setTimeout(() => {
+//     console.log("Task 3 completed...");
+//     callback();
+//   }, 1000);
+// }
+
+// //  Callback Hell (deeply nested)
+// task1(() => {
+//   task2(() => {
+//     task3(() => {
+//       console.log(" All tasks completed successfully!");
+//     });
+//   });
+// });
+
+// .....................promioces in jawascript...........................
+
+//........ Promise Structure....
+
+// let promise = new Promise((resolve, reject) => {
+//   let success = true;
+
+//   setTimeout(() => {
+//     if (success) {
+//       resolve("Data fetched successfully!");
+//     } else {
+//       reject("Failed to fetch data!");
+//     }
+//   }, 2000);
+// });
+
+// promise
+//   .then((message) => {
+//     console.log("✅", message);
+//   })
+//   .catch((error) => {
+//     console.log("❌", error);
+//   });
+/////////////////////////////////////////////////
+/* let a = new Promise((resolve, reject) => {
+  console.log("fetching data............");
+
+  setTimeout(() => {
+    resolve("data received........");
+  }, 3000);
+});
+let b = function () {
+  setTimeout(() => {
+    console.log("processing data...");
+  }, 2000);
+};
+
+a.then((data) => {
+  console.log(data);
+})
+  .then((b) => {
+    console.log(b);
+  })
+  .then(() => {
+    console.log("saving  data...");
+  })
+  .catch((err) => {
+    console.log("data not received....", err);
+  });
+ */
+
+//............................async await......................
+// A fake async function that returns data after 1 second
+/* function getData(num) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`Data ${num} received`);
+    }, 1000);
+  });
+}
+
+// Async function that fetches data one by one (sequentially)
+async function fetchData() {
+  let a = await getData(1);
+  console.log(a);
+
+  let b = await getData(2);
+  console.log(b);
+
+  let c = await getData(3);
+  console.log(c);
+
+  let d = await getData(4);
+  console.log(d);
+
+  let e = await getData(5);
+  console.log(e);
+
+  let f = await getData(6);
+  console.log(f);
+
+  console.log(" All data fetched successfully!");
+}
+
+// Call the function
+fetchData();
+ */

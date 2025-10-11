@@ -195,8 +195,117 @@
 // }
 // let result = (sum(), square());
 // console.log(result);
-
+7;
 //..................................................../
 // const str1 = "sahil";
 // const str2 = "rawat";
 // console.log([...str1, ...str2]);
+//.....................................................
+// let arr1 = [, , ,]; //2
+
+// let arr2 = [1, 2, 3, 4, 5]; //4
+// let arr3 = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+// ]; //1
+
+// // console.log(arr2.indexOf(3));
+// // // console.log();
+
+/* console.log(arr2.length);
+console.log(arr3.length);
+console.log(arr3[1].indexOf(6));
+ */
+//.....................short in assending order ------------------
+// let arr = [1, 2, 3, 54, 675, 76, 34, 23];
+/* 
+let assendingOrder = arr.sort((a, b) => a - b);
+console.log(assendingOrder); */
+//............................
+/* let arr = [1, 2, 3, 54, 675, 76, 34, 23];
+let arr2 = arr.filter((a) => a > 55);
+console.log(arr2); */
+//..........................slice method......................
+
+/* let arr = [11, 12, 13, 14, 15];
+let arr2 = arr.slice(1, 3);
+console.log(arr2);
+console.log(arr); */
+//.....................splice method.........................
+/* 🧠 Syntax:
+array.splice(start, deleteCount, item1, item2, ...) */
+/* let arr = [11, 12, 13, 14, 15];
+console.log(arr);
+
+let arr2 = arr.splice(1, 3, 44);
+console.log(arr2);
+console.log(arr); */
+//.........................make array empty .....................
+/* let arr = [2, 3, 4, 5, 6, 7, 8, 9];
+// arr.length = 0;
+// arr = [];
+let arr2 = arr.splice(0, arr.length);
+
+console.log(arr);
+ */
+//..........................creating new array methods............
+/* let arr = new Array(5, 4, 5, 6); // creates array of length 5 with empty slots
+let arr2 = new Array(1, 2, 3); // creates [1, 2, 3]
+console.log(arr, arr2);
+
+// let sahil = [, , ,];.
+// console.log(sahil);
+let arr3 = Array.of(1, 2, 3); // [1, 2, 3]
+console.log(arr3); */
+
+//..........................creating new object methods............
+/* let obj = new Object();
+obj.name = "Sahil";
+obj.age = 21;
+console.log(obj);
+
+let obj1 = Object();
+obj.name = "Sahil";
+obj.age = 21;
+console.log(obj); */
+//..............................return unique values...................
+/* 
+let arr = [2, 3, 4, 5, 6, 6, 7, 7];
+let arr2 = [...new Set(arr)];
+console.log(arr2);
+console.log(arr); */
+
+// let arr = ["sahil", "ayush", "sahil"];
+// let arr2 = [...new Set(arr)];
+// console.log(arr2);
+//............................................................
+/* let a = NaN;
+let b = a;
+console.log(a === b); // true (same reference)
+console.log(NaN === NaN);
+ */
+
+//.......................................
+/* let str = "my name is sahil";
+let str2 = str
+  .split(" ")
+  .map((word) => word[0].toUpperCase())
+  .forEach((letter) => console.log(letter)); */
+
+//.........................................................
+
+// console.log(typeof null);
+// console.log(typeof NaN);
+// console.log(typeof []);
+// console.log(typeof " ");
+// console.log(typeof undefined);
+// console.log(typeof {});
+// console.log(typeof true);
+
+//...............................................
+
+/* let a = 10;
+// console.log(++a);
+console.log(a++);
+console.log(a); */
+///////.........................................................
