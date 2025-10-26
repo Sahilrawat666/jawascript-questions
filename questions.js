@@ -296,6 +296,19 @@
 //   }
 // }
 
+/* for (let i = 1; i <= 1; i++) {
+  // Outer loop
+  for (let j = 1; j <= 10; j++) {
+    // Use semicolons here
+    console.log(j);
+  }
+}
+ */
+
+// const arr = [2, 4, 5, 6, 7, 8, 9];
+// const arr2 = arr.map((a += 3));
+// console.log(arr2);
+
 //while loop
 // let i = 1;
 // while (i <= 5) {
@@ -1066,3 +1079,217 @@ async function fetchData() {
 // Call the function
 fetchData();
  */
+//.................. Basic Error Handling.......................
+
+// .......... try, catch, finally and Throwing custom errors.............
+
+/* try {
+  console.log(a);
+} catch (error) {
+  console.log("error", error.message);
+}
+ */
+
+/////////////////////////
+// function divide(a, b) {
+//   if (b === 0) {
+//     throw new Error("Cannot divide by zero!");
+//   }
+//   return a / b;
+// }
+
+// try {
+//   console.log(divide(10, 2));
+// } catch (error) {
+//   console.log("Error:", error.message);
+// }
+////////////////////////
+// function greet(name) {
+//   if (typeof name !== "string") {
+//     throw new TypeError("Name must be a string");
+//   }
+//   console.log("Hello " + name);
+// }
+
+// try {
+//   greet("sahil");
+// } catch (error) {
+//   console.log(error.message);
+// }
+
+////////////....JSON.stringify() and TSON.parse()....................
+/* const user = {
+  name: "Sahil",
+  age: 22,
+  skills: ["JS", "React"],
+};
+
+const jsonData = JSON.stringify(user);
+console.log(jsonData); */
+//////////////////////
+/* const jsonArr = "[1,2,3,4]";
+// const arr = JSON.parse(jsonArr);
+const arr = JSON.parse(jsonArr);
+console.log(arr);
+
+console.log(arr[2]); // 3 */
+
+//.....................some questions.............
+// const arr = ["a", "b", "c", "d", 33, 5, 7, 8];
+// const numbers = arr.filter((x) => typeof x === "number");
+// const strings = arr.filter((x) => typeof x === "string");
+// console.log(numbers, strings);
+
+// const arr2 = arr.filter();
+
+//var function and global scoped
+//let is lbock scoped
+//const is lbock scoped
+
+////////////////////////////////////////////////////////
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let arr2 = arr.reverse();
+// console.log(arr2);
+////////////////////////////////////////////////////////
+/* const str = "sahil";
+const str2 = str.split("").reverse().join();
+console.log(str2); // "lihas" */
+
+////////////////////////////////////////////////////////
+
+/* // let arr = [];
+// arr.length = 100;
+let arr2 = new Array(100);
+console.log(arr2.length);
+ */
+
+//......................................................
+
+// const arr = [10, 20, 24, 40, 50, 30];
+
+// const result = arr.findLast((num) => num > 1005);
+// console.log(result); // 30  (last match, from the end)
+// const arr2 = arr.filter((a) => a > 90);
+// console.log(arr2);
+
+////////////////////////////////////////////////////////////
+// if ("0") {
+//   console.log("sahil");
+// } else {
+//   console.log("rawat");
+// }
+//////////////////////////////////////////////////////////
+// console.log(null == undefined);
+// console.log(null === undefined);
+//////////////////////////////////////////////////////////
+
+/* let arr = [2, 3, 44, 55, 666, 777];
+let singledigit = arr.filter((a) => a >= 0 && a <= 9);
+console.log(singledigit);
+
+let doubledigit = arr.filter((a) => a >= 10 && a <= 99);
+console.log(doubledigit);
+
+let tripledigit = arr.filter((a) => a >= 100 && a <= 999);
+console.log(tripledigit);
+ */
+////////////////////////////////////////////////////
+/* let arr = [2, 3, 44, 55, 666, 777];
+
+let singleDigit = arr.filter((a) => a.toString().length === 1);
+let doubleDigit = arr.filter((num) => num.toString().length === 2);
+let tripleDigit = arr.filter((num) => num.toString().length === 3);
+
+console.log(singleDigit); // [2, 3]
+console.log(doubleDigit); // [44, 55]
+console.log(tripleDigit); // [666, 777]
+ */
+
+// let arr = [1, 2, 3, 4, "q", "r", "y"];
+
+// let number = [];
+// let string = [];
+
+// for (let i = 0; i <= arr.length - 1; i++) {
+//   if (typeof arr[i] === "number") {
+//     number.push(arr[i]);
+//   } else {
+//     string.push(arr[i]);
+//   }
+// }
+// console.log(number);
+// console.log(string);
+
+////////////////////////////////////////////////////////
+// let arr = [
+//   { id: 1, name: "shail" },
+//   { id: 2, name: "ayush" },
+//   { id: 3, name: "ankush" },
+// ];
+// let arr2 = arr.filter((a) => a.id > 2);
+// console.log(arr2);
+/////////////////////////////////////////
+
+//........................currying in jawascript...............................
+
+// function sendMessage(to) {
+//   return function (message) {
+//     console.log(`Message to ${to}: ${message}`);
+//   };
+// }
+
+// const toAlice = sendMessage("Alice");
+// toAlice("Hi!");
+// toAlice("How are you?");
+
+///////////////////////////////////////////////////
+// function f(a) {
+//   return function (b) {
+//     console.log(a, b);
+//   };
+// }
+// f(3)(4);
+//////////////////////////////////////////////////////
+// let a = "let";
+// let b = "var";
+//////////////////////////////////////////////////////
+// function greet(callback) {
+//   console.log("Hello " + callback());
+//   // callback(); //  this is where the callback runs
+// }
+// let a = () => {
+//   console.log("sahil");
+// };
+// greet(a);
+///////////////////////////////////////////////////////////
+// console.log("3" + 1);
+// console.log("3" + 1);
+// console.log("3" - 1);
+// console.log(3 * 2);
+////////////////////////////////////////////////////////
+/* let str = [
+  "sahil",
+  "rqsdabfhj",
+  "ewdbshjwjshdbsvc",
+  "d",
+  "sahiarewaturidshjbx",
+];
+let longest = str.reduce((a, b) => (a.length > b.length ? a : b));
+console.log(longest);
+ */
+/////////////////////////////////////////////////////
+/* let str = [
+  "sahil",
+  "rqsdabfhj",
+  "ewdbshjwjshdbsvc",
+  "d",
+  "sahiarewaturidshjbx",
+];
+function a(str) {
+  return str.reduce((a, b) => (a.length > b.length ? a : b));
+}
+let b = a(str);
+console.log(b);
+ */
+//...........................................................
+// console.log(isNaN("shaiis"));
